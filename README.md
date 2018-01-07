@@ -1,4 +1,4 @@
-# binary.com-bot Here you will find some scripts for creating/using bots on Binary.com
+Here you will find some scripts for creating/using bots on Binary.com
 <b><h2>1# Multi Strategy Bot</h2></b>
 <h4><b>Preview:<a href="https://www.youtube.com/watch?v=dIR4_AvYX3g">https://www.youtube.com/watch?v=dIR4_AvYX3g</a></b> </h4>
 <h5><b>Download:<a href="https://github.com/multibinarybot/binary.com-bot/blob/master/1-multi-strategy-bot.xml">https://github.com/multibinarybot/binary.com-bot/blob/master/1-multi-strategy-bot.xml</a></b> </h5>

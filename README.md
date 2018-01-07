@@ -58,4 +58,13 @@ check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wi
     <li>WMA (12)</li>
     <li>SMMA (50)</li>
 </ul>
+<b><h2>5# Simple Candle Analysis</h2></b>
+<h4><b>Preview:<a href="https://www.youtube.com/watch?v=DahaZ6FNi30">https://www.youtube.com/watch?v=DahaZ6FNi30</a></b> </h4>
+<h5><b>Download:<a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/5-redgreen.xml">https://github.com/binary-ex-machina/binary.com-bot/blob/master/5-redgreen.xml</a></b> </h5>
+<p>This bot uses a simple strategy. It calls when the actual candle is green and put when its red.</p>
+<p><b>Money Management Strategies</b></p>
+<ul>
+    <li>Martingale</li>
+    <li>Candle Analysis</li>
+</ul>
 <h4>Updates coming...</h4>

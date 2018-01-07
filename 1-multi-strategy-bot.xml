@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
   <block type="loader" id="9_~DnA9eqUuLp!aBETY8" collapsed="true" x="0" y="0">
-    <field name="URL">https://gist.githubusercontent.com/multibinarybot/0c7db7c9ff55451db045980a61779f92/raw/b8c9da944f97875154b9407d614c4d986325a2a8/multi-binary-bot-utils.xml</field>
+    <field name="URL">https://gist.githubusercontent.com/binary-ex-machina/0c7db7c9ff55451db045980a61779f92/raw/b8c9da944f97875154b9407d614c4d986325a2a8/multi-binary-bot-utils.xml</field>
   </block>
   <block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="52">
     <field name="MARKET_LIST">volidx</field>

@@ -1,4 +1,7 @@
 Here you will find some scripts for creating/using bots on Binary.com
+
+check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Uses-of-the-Utils">utils</a>
+
 <b><h2>1# Multi Strategy Bot</h2></b>
 <h4><b>Preview:<a href="https://www.youtube.com/watch?v=dIR4_AvYX3g">https://www.youtube.com/watch?v=dIR4_AvYX3g</a></b> </h4>
 <h4><b>Preview:<a href="https://www.youtube.com/watch?v=MEo0CsgxAsQ">https://www.youtube.com/watch?v=MEo0CsgxAsQ</a></b> </h4>

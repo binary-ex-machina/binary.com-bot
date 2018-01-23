@@ -82,7 +82,7 @@ check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wi
     <li>CHOP</li>
 </ul>
 
-<b><h2>#7</h2></b>
+<b><h2>#7 Profit in Cycles</h2></b>
 <h4><b>Preview:<a href="https://www.youtube.com/watch?v=z-hQvAtE9aE">https://www.youtube.com/watch?v=z-hQvAtE9aE</a></b> </h4>
 <h5><b>Download:<a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/7-profit_in_cycles.xml">https://github.com/binary-ex-machina/binary.com-bot/blob/master/7-profit_in_cycles.xml</a></b> </h5>
 <p>Low risk bot with some nice results. It work in cycles, giving you more control of the profit.</p>

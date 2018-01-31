@@ -1,4 +1,5 @@
-Here you will find some scripts for creating/using bots on Binary.com
+Here you will find some scripts for creating/using bots on Binary.com<br>
+Check the Binary Bot CLI and other stuff: https://github.com/binary-com/binary-bot
 
 check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Uses-of-the-Utils">utils</a></br>
 <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/indicators">Indicators</a>

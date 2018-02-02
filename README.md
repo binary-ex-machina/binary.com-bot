@@ -21,6 +21,12 @@ check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wi
     <li>
         <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/indicators/wma/wma.xml">WMA</a>
     </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#true-range">TR</a>
+    </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#average-true-range">ATR</a>
+    </li>
 </ul>
 
 Check out all <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots">Bots</a>

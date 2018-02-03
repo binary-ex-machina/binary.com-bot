@@ -10,32 +10,59 @@ check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wi
         <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/money_management/labouchere/labouchere.xml">Labouchere</a>
     </li>
 </ul>
+<a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Candle-Analysis">Candle Analysis</a>
+<ul>
+    <li>
+         <a  href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Candle-Analysis#same-color">Same Color</a>
+        </li>
+    </ul>
 <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators">Indicators</a>
 <ul>
     <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/indicators/chop/chop.xml">CHOP</a>
+        <a https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#arnaud-legoux-ma">Arnaud Legoux MA</a>
     </li>
     <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/indicators/hullma/hullma.xml">Hull MA</a>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#average-true-range">Average True Range</a>
     </li>
-    <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/indicators/wma/wma.xml">WMA</a>
-    </li>
-    <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#true-range">TR</a>
-    </li>
-    <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#average-true-range">ATR</a>
-    </li>
-    <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#stochastic">Stochastic</a>
-    </li>
-    <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#price-oscilator">Price Oscilator</a>
-    </li>
-    <li>
+ <li>
         <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#awesome-oscilator">Awesome Oscilator</a>
     </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#chop-indicator">Choppiness Indicator</a>
+    </li>
+                                                                                                          <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#double-ma">Double EMA</a>
+    </li>
+                                                                                                        </li>
+                                                                                                          <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#fractal">Fractal</a>
+    </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#hull-ma">Hull MA</a>
+    </li>
+                                                                                             <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#price-oscilator">Price Oscilator</a>
+    </li>
+                                                                                                      <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#stochastic">Stochastic</a>
+    </li>
+                                                                                                <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#triple-ma">Triple EMA</a>
+    </li>
+                                                                                               <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#true-range">True Range</a>
+    </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#wma">WMA</a>
+    </li>
+                                                                                         <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#williams--r">Williams % R</a>
+    </li>
+    
+    
+   
+    
+   
 </ul>
 
 Check out all <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots">Bots</a>

@@ -30,6 +30,10 @@ check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wi
     <li>
         <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#stochastic">Stochastic</a>
     </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#price-oscilator">Price Oscilator</a>
+    </li>
+    
 </ul>
 
 Check out all <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots">Bots</a>

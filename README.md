@@ -19,7 +19,7 @@ check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wi
 <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators">Indicators</a>
 <ul>
     <li>
-        <a https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#arnaud-legoux-ma">Arnaud Legoux MA</a>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#arnaud-legoux-ma">Arnaud Legoux MA</a>
     </li>
     <li>
         <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#average-true-range">Average True Range</a>

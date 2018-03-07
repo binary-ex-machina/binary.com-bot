@@ -90,6 +90,10 @@ All <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots">Bots
         <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots#7-profit-in-cycles">Profit in Cycles ($15/30min)</a>
     </li>
     <li>
-        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots#8-martingale-profit"><strong>NEW</strong> Martingale Profit ($45/hour)</a>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots#8-martingale-profit">Martingale Profit ($45/hour)</a>
     </li>
+    <li>
+        <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Bots#9-high-accuracy-rate"><strong>NEW</strong> High  Success Rate ($30/hour)</a>
+    </li>
+    
 </ul>

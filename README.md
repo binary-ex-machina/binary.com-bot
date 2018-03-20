@@ -1,11 +1,16 @@
 Here you will find some scripts for creating/using bots on Binary.com<br> Check the Binary Bot CLI and other stuff: https://github.com/binary-com/binary-bot check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Money-Management">Money Management</a></br>
 <ul>
   <li>
-    <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/money_management/martingale/exmachina.martingale.xml">Martingale</a>
+    <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Money-Management#martingale">Martingale</a>
   </li>
   <li>
-    <a href="https://github.com/binary-ex-machina/binary.com-bot/blob/master/money_management/labouchere/labouchere.xml">Labouchere</a>
+    <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Money-Management#labouchere">Labouchere</a>
   </li>
+  <li>
+    <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Money-Management#oscars-grind">Oscar's Grind</a>
+  </li>
+
+
 </ul>
 <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Candle-Analysis">Candle Analysis</a>
 <ul>

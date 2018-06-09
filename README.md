@@ -33,6 +33,9 @@ Here you will find some scripts for creating/using bots on Binary.com<br> Check 
     <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#chop-indicator">Choppiness Indicator</a>
   </li>
   <li>
+    <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#commodity-channel-index">Commodity Channel Index</a>
+  </li>
+  <li>
     <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators#double-ma">Double EMA</a>
   </li>
   </li>

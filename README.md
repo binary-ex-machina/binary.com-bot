@@ -17,6 +17,9 @@ Here you will find some scripts for creating/using bots on Binary.com<br> Check 
   <li>
     <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Candle-Analysis#same-color">Same Color</a>
   </li>
+  <li>
+    <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Candle-Analysis#properties-size-wick-body">Properties</a>
+  </li>
 </ul>
 <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Indicators">Indicators</a>
 <ul>

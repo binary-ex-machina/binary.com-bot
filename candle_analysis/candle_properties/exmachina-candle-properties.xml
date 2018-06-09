@@ -1,0 +1,289 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+  <variables>
+    <variable type="" id="2{^hXv#SrKkoEf=,3*KI">::candle</variable>
+  </variables>
+  <block type="procedures_defreturn" id="Bd~`v3C{VG@_S0pvMgpf" collapsed="true" x="0" y="0">
+    <mutation>
+      <arg name="::candle" varid="2{^hXv#SrKkoEf=,3*KI"></arg>
+    </mutation>
+    <field name="NAME">ExMachina:getCandleSize</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="kzFGrZtItnNL!|cf+[72" inline="false">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <shadow type="math_number" id="J=!gqqE|}$G]4fhDw34W">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="read_ohlc_obj" id=")xOUz_xy9ZeRW1UW9ap[">
+            <field name="OHLCFIELD_LIST">high</field>
+            <value name="OHLCOBJ">
+              <block type="variables_get" id="#HKiA7QQFPk4Q-ub[nU6">
+                <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="/m0K_UoiTm6w5QM^?w^0">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="read_ohlc_obj" id="56U=r1$j,3$,_8/(}~li">
+            <field name="OHLCFIELD_LIST">low</field>
+            <value name="OHLCOBJ">
+              <block type="variables_get" id="Lk)YmWen:%Y_.p)p107D">
+                <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="CG%tVl+$Bm077F#njymg" collapsed="true" x="0" y="53">
+    <mutation>
+      <arg name="::candle" varid="2{^hXv#SrKkoEf=,3*KI"></arg>
+    </mutation>
+    <field name="NAME">ExMachina:getCandleWickSize</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="Ert#H0e[nE};OQ%WAOS]" inline="false">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <shadow type="math_number" id="%JoMWi$*Qt+9nBhAScQS">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id=";L~K5]]B}E/|-(Bu3Toa" inline="false">
+            <field name="OP">MINUS</field>
+            <value name="A">
+              <shadow type="math_number" id="J=!gqqE|}$G]4fhDw34W">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="read_ohlc_obj" id="2TID{P3iD_3sPt@3[M=Q">
+                <field name="OHLCFIELD_LIST">high</field>
+                <value name="OHLCOBJ">
+                  <block type="variables_get" id="1VN[oS{Kh`r6eQm[uvT7">
+                    <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="/m0K_UoiTm6w5QM^?w^0">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="read_ohlc_obj" id="b+7,?|@N+;loPpgw55p2">
+                <field name="OHLCFIELD_LIST">low</field>
+                <value name="OHLCOBJ">
+                  <block type="variables_get" id="P/+pZ(n]wo1kI:t?hqXF">
+                    <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="`?c}Q~flr]-[|YtMp,?l">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_single" id="bF/M:uCo~c]8L=7JbJBy">
+            <field name="OP">ABS</field>
+            <value name="NUM">
+              <shadow type="math_number" id="oAm%-i+UA%%WQH?4xL`:">
+                <field name="NUM">9</field>
+              </shadow>
+              <block type="math_arithmetic" id="/%h8_8dO|6jETnW?$4{M" inline="false">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="J=!gqqE|}$G]4fhDw34W">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="read_ohlc_obj" id="^8:1AkhPJ;h)[L6T{(KT">
+                    <field name="OHLCFIELD_LIST">close</field>
+                    <value name="OHLCOBJ">
+                      <block type="variables_get" id="06ar3^IO!E:-dBS@Vm6f">
+                        <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="/m0K_UoiTm6w5QM^?w^0">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="read_ohlc_obj" id="{+VBlO1D0Fnj1$9~9nlk">
+                    <field name="OHLCFIELD_LIST">open</field>
+                    <value name="OHLCOBJ">
+                      <block type="variables_get" id="NEIiLaq0`/e)N/SbQ=vB">
+                        <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="l5AlN)s+HzVEqao}+3~:" collapsed="true" x="0" y="106">
+    <mutation>
+      <arg name="::candle" varid="2{^hXv#SrKkoEf=,3*KI"></arg>
+    </mutation>
+    <field name="NAME">ExMachina:getCandleBodySize</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <value name="RETURN">
+      <block type="math_single" id="{)Ov?v~T_KA)h9Dqs(mQ">
+        <field name="OP">ABS</field>
+        <value name="NUM">
+          <shadow type="math_number" id="oAm%-i+UA%%WQH?4xL`:">
+            <field name="NUM">9</field>
+          </shadow>
+          <block type="math_arithmetic" id="q!^7dYnpPG-LO2@#jEKO" inline="false">
+            <field name="OP">MINUS</field>
+            <value name="A">
+              <shadow type="math_number" id="J=!gqqE|}$G]4fhDw34W">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="read_ohlc_obj" id="otCRbT9Cv3cenO?#3E!/">
+                <field name="OHLCFIELD_LIST">close</field>
+                <value name="OHLCOBJ">
+                  <block type="variables_get" id="yfsZhNLLcUg23$t(1[)g">
+                    <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="/m0K_UoiTm6w5QM^?w^0">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="read_ohlc_obj" id="oumad)sy4ti{M!)hQQhB">
+                <field name="OHLCFIELD_LIST">open</field>
+                <value name="OHLCOBJ">
+                  <block type="variables_get" id="Tuw4CIR(MeUyjmzpY(Y0">
+                    <field name="VAR" id="2{^hXv#SrKkoEf=,3*KI" variabletype="">::candle</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="trade" id="uMw.L:-W%:2WMw!r*=}T" x="0" y="159">
+    <field name="MARKET_LIST">volidx</field>
+    <field name="SUBMARKET_LIST">random_index</field>
+    <field name="SYMBOL_LIST">R_10</field>
+    <field name="TRADETYPECAT_LIST">callput</field>
+    <field name="TRADETYPE_LIST">risefall</field>
+    <field name="TYPE_LIST">both</field>
+    <field name="CANDLEINTERVAL_LIST">60</field>
+    <field name="TIME_MACHINE_ENABLED">FALSE</field>
+    <field name="RESTARTONERROR">TRUE</field>
+    <statement name="SUBMARKET">
+      <block type="tradeOptions" id="usV3ye//NX{PMbLihL+@">
+        <field name="DURATIONTYPE_LIST">t</field>
+        <field name="CURRENCY_LIST">USD</field>
+        <value name="DURATION">
+          <shadow type="math_number" id="r+#3eIAfg=06PZ$4H$@J">
+            <field name="NUM">5</field>
+          </shadow>
+        </value>
+        <value name="AMOUNT">
+          <shadow type="math_number" id="@u#s,T[U_,lD1Te{#`:E">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="before_purchase" id="loDxSIj:lOYIU?l5ys5%" x="0" y="562">
+    <statement name="BEFOREPURCHASE_STACK">
+      <block type="notify" id=".|}C.,{o}?$`RzuYQkV}">
+        <field name="NOTIFICATION_TYPE">success</field>
+        <field name="NOTIFICATION_SOUND">silent</field>
+        <value name="MESSAGE">
+          <shadow type="text" id="+Vuw4!%E^9th*j@L?:KG">
+            <field name="TEXT">abc</field>
+          </shadow>
+          <block type="procedures_callreturn" id="Vl{itjl*@~WHZXjsy;+]">
+            <mutation name="ExMachina:getCandleBodySize">
+              <arg name="::candle"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="get_ohlc" id="KS:2?*XJvT~CIm9@$X8#">
+                <field name="CANDLEINTERVAL_LIST">default</field>
+                <value name="CANDLEINDEX">
+                  <shadow type="math_number" id="Nf{KDHu8dbVUFbAOS!xN">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="notify" id="TpdeO{[yNC:ALNwpm2F_">
+            <field name="NOTIFICATION_TYPE">success</field>
+            <field name="NOTIFICATION_SOUND">silent</field>
+            <value name="MESSAGE">
+              <shadow type="text" id="z.q)rMM:`NVi!HnV];y{">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="procedures_callreturn" id="`mTC!rdACZn)?m4}(XH6">
+                <mutation name="ExMachina:getCandleSize">
+                  <arg name="::candle"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="get_ohlc" id="6S55ss=;@k{((z#^k~K8">
+                    <field name="CANDLEINTERVAL_LIST">default</field>
+                    <value name="CANDLEINDEX">
+                      <shadow type="math_number" id="zUvbO1Z^eC{~47Yg3RSN">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="notify" id="P4SJvw(GB]l~o:xJ(wp_">
+                <field name="NOTIFICATION_TYPE">success</field>
+                <field name="NOTIFICATION_SOUND">silent</field>
+                <value name="MESSAGE">
+                  <shadow type="text" id="ezG{Jn5[[{9s=)5vhW|r">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block type="procedures_callreturn" id="3FMolGl_Ra)P5Q)XwN9b">
+                    <mutation name="ExMachina:getCandleWickSize">
+                      <arg name="::candle"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="get_ohlc" id="AzUqZ3~?w|YXd(wq~~zg">
+                        <field name="CANDLEINTERVAL_LIST">default</field>
+                        <value name="CANDLEINDEX">
+                          <shadow type="math_number" id="N;i$tHxkr:J}d1[8vm/L">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="after_purchase" id="xQqN48z=Mz/iaO~.qln." x="0" y="862">
+    <statement name="AFTERPURCHASE_STACK">
+      <block type="trade_again" id="J[;CjN^2=m~L|8eMR)i8"></block>
+    </statement>
+  </block>
+</xml>

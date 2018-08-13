@@ -1,3 +1,5 @@
+All my bots where moved to my store: https://gumroad.com/binarybot
+
 Here you will find some scripts for creating/using bots on Binary.com<br> Check the Binary Bot CLI and other stuff: https://github.com/binary-com/binary-bot check some of my <a href="https://github.com/binary-ex-machina/binary.com-bot/wiki/Money-Management">Money Management</a></br>
 <ul>
   <li>

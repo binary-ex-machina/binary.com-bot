@@ -1,0 +1,485 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="Jtx6#BMv.{+Vwk{Zt[N{">CCI::Candles</variable>
+    <variable type="" id="bx*rZ8WSH(t{7vOc]e]!">CCI::Period</variable>
+    <variable type="" id="{I6n^QP]S/e-LL^SGw-0">CCI::Size</variable>
+    <variable type="" id="bE6AnkM.u.gkDM4|*a;X">CCI::ListArray</variable>
+    <variable type="" id="9pHh%x0C/0NlM+{`p8{:">CCI::List</variable>
+    <variable type="" id="aq2[%Nkc5L~Jwr[wo~wY">CCI::k</variable>
+    <variable type="" id="#LS1%xZN;r$VA$Dx[Rh3">CCI::Sum</variable>
+    <variable type="" id="c)+/U?b^%^i;%gK`oRNf">CCI::NewCandles</variable>
+    <variable type="" id="?zoZETMP];FN*3dc2FdG">CCI::i</variable>
+    <variable type="" id="`3u+iJ-JfMl/U%_9pZ[s">CCI::m</variable>
+    <variable type="" id="cQz=yJ,V?$Qv^Cnj+(u{">CCI::Item</variable>
+  </variables>
+  <block type="procedures_defreturn" id="#MK/ccEM]Om9KQlL/)vU" collapsed="true" x="0" y="0">
+    <mutation>
+      <arg name="CCI::Candles" varid="Jtx6#BMv.{+Vwk{Zt[N{"></arg>
+      <arg name="CCI::Period" varid="bx*rZ8WSH(t{7vOc]e]!"></arg>
+    </mutation>
+    <field name="NAME">ExMachina:GetCCI</field>
+    <statement name="STACK">
+      <block type="variables_set" id="EF*6yE14TyN0`8LE4A]O">
+        <field name="VAR" id="9pHh%x0C/0NlM+{`p8{:" variabletype="">CCI::List</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="H24X7}rsGM.w]%1igl|?">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="KlMCpoh$:b.^{#7VLB2l">
+            <field name="VAR" id="#LS1%xZN;r$VA$Dx[Rh3" variabletype="">CCI::Sum</field>
+            <value name="VALUE">
+              <block type="math_number" id="!w*z{:T{:z9FvZbl!P|O">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_for" id="e!!vd9R6Utu@_5D{$T`I">
+                <field name="VAR" id="?zoZETMP];FN*3dc2FdG" variabletype="">CCI::i</field>
+                <value name="FROM">
+                  <block type="math_number" id="9.mEBoAG`?H#Ga5g_@Au">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="variables_get" id=".#|EjK((X2rGUKfqgrDM">
+                    <field name="VAR" id="bx*rZ8WSH(t{7vOc]e]!" variabletype="">CCI::Period</field>
+                  </block>
+                </value>
+                <value name="BY">
+                  <block type="math_number" id="~`J1SG9x/A:zDT?C|g!R">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="Ck0_iNie-07emB2@iSM5">
+                    <field name="VAR" id="cQz=yJ,V?$Qv^Cnj+(u{" variabletype="">CCI::Item</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="b=)G5{/?b`$ay{,HqEv;" inline="false">
+                        <field name="OP">DIVIDE</field>
+                        <value name="A">
+                          <shadow type="math_number" id="6RtLksZyR:${,d/%s.zH">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id=".,OHoSIw+,yrNqbr)`mc" inline="false">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <shadow type="math_number" id="rF^)k9x3EzH47+N2(s3/">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="fM6d#m132-EOwK+_X.K~" inline="false">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="~#w05-I)+zw|2`UzU(c3">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="read_ohlc_obj" id="!-[fgYYAH,;3Gmn7B-H6">
+                                    <field name="OHLCFIELD_LIST">high</field>
+                                    <value name="OHLCOBJ">
+                                      <block type="lists_getIndex" id="Q;g!(KW+i0[j9g(39XnY">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="TVtkSY44Vn~QkGOt?;M9">
+                                            <field name="VAR" id="Jtx6#BMv.{+Vwk{Zt[N{" variabletype="">CCI::Candles</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="dPX]e6_Ep?N*j}q4`i?p">
+                                            <field name="VAR" id="?zoZETMP];FN*3dc2FdG" variabletype="">CCI::i</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="|9yROBovT46,iGy~56B|">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="read_ohlc_obj" id="`$-kS-baP3z._[EL)$:?">
+                                    <field name="OHLCFIELD_LIST">low</field>
+                                    <value name="OHLCOBJ">
+                                      <block type="lists_getIndex" id="3|f8`lbD?_3J@?=sn_;Q">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="Z}o(x`ydWU0=q+xW9+=1">
+                                            <field name="VAR" id="Jtx6#BMv.{+Vwk{Zt[N{" variabletype="">CCI::Candles</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="H:|0l|,2pm*{0thuC_s,">
+                                            <field name="VAR" id="?zoZETMP];FN*3dc2FdG" variabletype="">CCI::i</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="El?X6|BOklyTAS09(v%B">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="read_ohlc_obj" id="eo7o^$RsCv.|*caz0!Wj">
+                                <field name="OHLCFIELD_LIST">close</field>
+                                <value name="OHLCOBJ">
+                                  <block type="lists_getIndex" id="@XE0*B4/P:Y4_4$85aZ4">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="CrAIKBT+t]7(P!iPuA!5">
+                                        <field name="VAR" id="Jtx6#BMv.{+Vwk{Zt[N{" variabletype="">CCI::Candles</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="TywmIhTH:4uJ^?.Pb=;?">
+                                        <field name="VAR" id="?zoZETMP];FN*3dc2FdG" variabletype="">CCI::i</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="I/FHE*h9GJ~=F?t15p1~">
+                            <field name="NUM">3</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lists_setIndex" id="^8ib3vw1.WF/)Y~ZHY!6">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">FIRST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="]hvT.ZmFF+zF=0r6]zm.">
+                            <field name="VAR" id="9pHh%x0C/0NlM+{`p8{:" variabletype="">CCI::List</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="variables_get" id="^|cz)h-39e)?*B~%Rj0A">
+                            <field name="VAR" id="cQz=yJ,V?$Qv^Cnj+(u{" variabletype="">CCI::Item</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="math_change" id="iyGj#ZIQPY67q@|:[q7~">
+                            <field name="VAR" id="#LS1%xZN;r$VA$Dx[Rh3" variabletype="">CCI::Sum</field>
+                            <value name="DELTA">
+                              <shadow type="math_number" id="mroC65^WN3yM7O[PI2m*">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_single" id="l0N=X(p$RXqy6zlO9,Sv">
+                                <field name="OP">ABS</field>
+                                <value name="NUM">
+                                  <shadow type="math_number" id="(ek5`FHj#?/Bo_p[X5~$">
+                                    <field name="NUM">9</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id="L5p[VWt)g(kY(,3c1PkS">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="ICreQPI0p-@]`IVJfa1f">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="SznID1bvPp!]%5W0rBAC">
+                                        <field name="VAR" id="cQz=yJ,V?$Qv^Cnj+(u{" variabletype="">CCI::Item</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="+]PDxLa^/D4Dm~ie=?M?">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="sma" id="}*P5Q@q}4-x4~fYD{;I4">
+                                        <value name="INPUT">
+                                          <block type="ohlc_values_in_list" id="=fw1qIzR~S.X*|*Z,@#Z">
+                                            <field name="OHLCFIELD_LIST">close</field>
+                                            <value name="OHLCLIST">
+                                              <block type="variables_get" id="`;m;~ZRfRW95k8dnGb~/">
+                                                <field name="VAR" id="Jtx6#BMv.{+Vwk{Zt[N{" variabletype="">CCI::Candles</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="PERIOD">
+                                          <shadow type="math_number" id=":km%iqM$+CB,vr%2-uat">
+                                            <field name="NUM">10</field>
+                                          </shadow>
+                                          <block type="variables_get" id="$}eZ%l*y48.$faHhnBrz">
+                                            <field name="VAR" id="bx*rZ8WSH(t{7vOc]e]!" variabletype="">CCI::Period</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="d2P,m?fTT37kk8vW|c;b" inline="false">
+        <field name="OP">DIVIDE</field>
+        <value name="A">
+          <shadow type="math_number" id="@:kVapH$QWb?WT+QI1#J">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id="..h:D9qRhTp-|Y2xypqy">
+            <field name="OP">MINUS</field>
+            <value name="A">
+              <shadow type="math_number" id="gU8(qqdef~9^]BZOZ~,_">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="lists_getIndex" id="A{|PZ[M]Kt9lIL/t!@KW">
+                <mutation statement="false" at="false"></mutation>
+                <field name="MODE">GET</field>
+                <field name="WHERE">LAST</field>
+                <value name="VALUE">
+                  <block type="variables_get" id="#(!d{Xjwf+;Ed?zK_1S+">
+                    <field name="VAR" id="9pHh%x0C/0NlM+{`p8{:" variabletype="">CCI::List</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="x-k`:Oo]X?A[Y7s2XL~g">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="sma" id="XrsH^f]ofX1SdL3bg*YO">
+                <value name="INPUT">
+                  <block type="variables_get" id="OCkwim}}^YDpk.y:aYqb">
+                    <field name="VAR" id="9pHh%x0C/0NlM+{`p8{:" variabletype="">CCI::List</field>
+                  </block>
+                </value>
+                <value name="PERIOD">
+                  <shadow type="math_number" id="mk-o`{!S:Vy8*~mOP3Fp">
+                    <field name="NUM">10</field>
+                  </shadow>
+                  <block type="variables_get" id="CIxJc5dKaD:G.aRbJTNR">
+                    <field name="VAR" id="bx*rZ8WSH(t{7vOc]e]!" variabletype="">CCI::Period</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="WTai)fK`?tuf5o^2[y7t">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id="G,UFSppdd2F|=8RKY|^S">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="Z*xG~r1cY%$2+Tmp`30]">
+                <field name="NUM">0.015</field>
+              </shadow>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="bue#E.U4Rgj|uSlRxFZU">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_arithmetic" id="68.bf(`~pcwVO/ZS?War">
+                <field name="OP">DIVIDE</field>
+                <value name="A">
+                  <shadow type="math_number" id="fTkV8{jE[en_4Yq02x[h">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id=";FFLI{1BhCykt65i%SpY">
+                    <field name="VAR" id="#LS1%xZN;r$VA$Dx[Rh3" variabletype="">CCI::Sum</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="rf:j@yaR?p.7T9(q5Fzn">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="-_O:*$jO%4aA`[5z;rHF">
+                    <field name="VAR" id="bx*rZ8WSH(t{7vOc]e]!" variabletype="">CCI::Period</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="G?Yf@w;{PR8ayJ}M{;Bp" collapsed="true" x="0" y="53">
+    <mutation>
+      <arg name="CCI::Candles" varid="Jtx6#BMv.{+Vwk{Zt[N{"></arg>
+      <arg name="CCI::Period" varid="bx*rZ8WSH(t{7vOc]e]!"></arg>
+      <arg name="CCI::Size" varid="{I6n^QP]S/e-LL^SGw-0"></arg>
+    </mutation>
+    <field name="NAME">ExMachina:GetCCIArray</field>
+    <statement name="STACK">
+      <block type="variables_set" id=")A,8g|KoO/{Redd8U%/r">
+        <field name="VAR" id="bE6AnkM.u.gkDM4|*a;X" variabletype="">CCI::ListArray</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="kHixdv;/~*pBdD6gwWjz">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="@$4/!~v`oC-[TI]=}(;L">
+            <field name="VAR" id="aq2[%Nkc5L~Jwr[wo~wY" variabletype="">CCI::k</field>
+            <value name="FROM">
+              <block type="math_number" id="K4Ub0p{BmKwEme_ojQTx">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="variables_get" id="=Q9,N[C()LI$I3zutOf=">
+                <field name="VAR" id="{I6n^QP]S/e-LL^SGw-0" variabletype="">CCI::Size</field>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="d86/T^;y.OSw_Q%A~1TI">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="variables_set" id="rC8xft6iXz-XNlG{[QB$">
+                <field name="VAR" id="c)+/U?b^%^i;%gK`oRNf" variabletype="">CCI::NewCandles</field>
+                <value name="VALUE">
+                  <block type="lists_create_with" id="O=(-Qaw7aL4(ars#{nu-">
+                    <mutation items="0"></mutation>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="C(tUl@jT{^Oh;:obbWAU">
+                    <field name="VAR" id="`3u+iJ-JfMl/U%_9pZ[s" variabletype="">CCI::m</field>
+                    <value name="FROM">
+                      <block type="variables_get" id=";[BkCi~[n75!|P6EN0#~">
+                        <field name="VAR" id="aq2[%Nkc5L~Jwr[wo~wY" variabletype="">CCI::k</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_arithmetic" id="0%^:7S+dB%voeH:B;,(6">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <shadow type="math_number" id="*ALOI?:oSoeit|p0cW/C">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="|sVH*1377%(Gb*n@*~Yd">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id="?IpMPR*.5Ro)JJro2I$V">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="Vj0U}R?5vL:!TX5JshW!">
+                                <field name="VAR" id="{I6n^QP]S/e-LL^SGw-0" variabletype="">CCI::Size</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="FJVS2vQqXB@LA:i^Ei.g">
+                                <field name="NUM">2</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="+x6]!5Hg=BudS64+G(q_">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="!-JJao!%jY^Z~CxM/{a7">
+                            <field name="VAR" id="aq2[%Nkc5L~Jwr[wo~wY" variabletype="">CCI::k</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <block type="math_number" id="yq-x,N)~8n;o`)Mxfv5p">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="lists_setIndex" id="(`jhxS!mPy2Ns_=nwqeS">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">FIRST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="iDs|_s=}p/e8Pz3=ql9_">
+                            <field name="VAR" id="c)+/U?b^%^i;%gK`oRNf" variabletype="">CCI::NewCandles</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="lists_getIndex" id="6iNr5lY~_gf[}7#sU`]p">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_END</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="E_Ho*5uDJeU0B+^[}t^^">
+                                <field name="VAR" id="Jtx6#BMv.{+Vwk{Zt[N{" variabletype="">CCI::Candles</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id="zr)RjT`6Sc)2eiHF}ClS">
+                                <field name="VAR" id="`3u+iJ-JfMl/U%_9pZ[s" variabletype="">CCI::m</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="lists_setIndex" id="=74%m%^-%})Pn0d=opks">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">FIRST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="I#C8eeb:lc3v=IR7Uf(k">
+                            <field name="VAR" id="bE6AnkM.u.gkDM4|*a;X" variabletype="">CCI::ListArray</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="procedures_callreturn" id=",dq7:Q2Z2HJS2hqJv|}P">
+                            <mutation name="ExMachina:GetCCI">
+                              <arg name="CCI::Candles"></arg>
+                              <arg name="CCI::Period"></arg>
+                            </mutation>
+                            <value name="ARG0">
+                              <block type="variables_get" id="tLYWIDra?;*H|?vB3dSm">
+                                <field name="VAR" id="c)+/U?b^%^i;%gK`oRNf" variabletype="">CCI::NewCandles</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="variables_get" id="IgybHeFZqa+$25lQHL3Q">
+                                <field name="VAR" id="bx*rZ8WSH(t{7vOc]e]!" variabletype="">CCI::Period</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="G.!|KM;zienZ,ZyomRK1">
+        <field name="VAR" id="bE6AnkM.u.gkDM4|*a;X" variabletype="">CCI::ListArray</field>
+      </block>
+    </value>
+  </block>
+</xml>
